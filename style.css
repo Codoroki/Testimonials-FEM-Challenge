@@ -15,6 +15,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    z-index: 2;
 }
 
 .card img {
@@ -44,6 +45,15 @@ body {
     font-style: normal;
 }
 
+#quote {
+   position: absolute;
+   right: 20%;
+   top: 15px;
+   scale: 1.2;
+   z-index: -1;
+   visibility: hidden;
+}
+
 .testimonial p {
     opacity: 0.7;
 }
@@ -54,6 +64,8 @@ body {
 #testimonial-1 {
     background-color: #7541c8;
     color: #ffffff;
+    position: relative;
+    z-index: 0;
 }
 
 #testimonial-2 {
@@ -105,6 +117,10 @@ body {
     #bottom { 
         display: flex;
         flex-basis: 50%;
+    }
+
+    #quote {
+        visibility: visible;
     }
 
     #testimonial-1, #testimonial-4 {
